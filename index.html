@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gov Schemes Explorer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container header-inner">
+        <h1 data-i18n="app_title">Government Schemes Explorer</h1>
+        <div class="language-switcher">
+          <label for="language-select" class="visually-hidden" data-i18n="language_label">Language</label>
+          <select id="language-select" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="mr">मराठी</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ml">മലയാളം</option>
+            <option value="or">ଓଡ଼ିଆ</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="filters" aria-labelledby="filters-title">
+        <h2 id="filters-title" data-i18n="filters_title">Filters</h2>
+        <div class="filters-grid">
+          <div class="filter-item">
+            <label for="state-filter" data-i18n="state_label">State</label>
+            <select id="state-filter"></select>
+          </div>
+          <div class="filter-item">
+            <label for="type-filter" data-i18n="type_label">Type</label>
+            <select id="type-filter"></select>
+          </div>
+          <div class="filter-item">
+            <label for="search-input" data-i18n="search_label">Search</label>
+            <input id="search-input" type="search" data-i18n-placeholder="search_placeholder" placeholder="Search by name, benefits, eligibility" />
+          </div>
+        </div>
+        <div id="results-count" class="results-count" aria-live="polite"></div>
+      </section>
+
+      <section class="results" aria-live="polite">
+        <div id="schemes-container" class="schemes-grid"></div>
+        <div id="no-results" class="no-results" hidden data-i18n="no_results">No schemes found.</div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> <span data-i18n="footer_note">Unofficial catalogue compiled for demonstration.</span></small>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+  </html>
+
+
