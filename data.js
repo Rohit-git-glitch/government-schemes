@@ -9,7 +9,8 @@ window.SCHEMES = [
     name: {
       en: "PM-KISAN: Pradhan Mantri Kisan Samman Nidhi",
       hi: "प्रधानमंत्री किसान सम्मान निधि (PM-KISAN)",
-      ta: "பிரதான் மந்திரி விவசாயி சம்மான் நிதி (PM-KISAN)"
+      ta: "பிரதான் மந்திரி விவசாயி சம்மான் நிதி (PM-KISAN)",
+      ma: "PM-KISAN: प्रधानमंत्री किसान सन्मान निधी",
     },
     description: {
       en: "Income support to all farmer families with cultivable land.",
@@ -228,5 +229,6 @@ window.SCHEMES = [
     link: "https://sjsa.maharashtra.gov.in/"
   }
 ];
+
 
 
